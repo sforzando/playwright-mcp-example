@@ -1,8 +1,12 @@
-## Cloudflare Playwright MCP Example
+# Cloudflare Playwright MCP Example
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/playwright-mcp/tree/main/cloudflare/example)
+- [Overview](#overview)
+- [Deploy](#deploy)
+- [Use with Cloudflare AI Playground](#use-with-cloudflare-ai-playground)
+- [Use with Claude Desktop](#use-with-claude-desktop)
+- [Configure in VSCode](#configure-in-vscode)
 
-### Overview
+## Overview
 
 This project demonstrates how to use [Playwright with Cloudflare Workers](https://github.com/cloudflare/playwright) as a Model Control Protocol (MCP) server using [Cloudflare Playwright MCP](https://github.com/cloudflare/playwright-mcp).
 
@@ -10,7 +14,7 @@ It enables AI assistants to control a browser through a set of tools, allowing t
 
 The server can be used with various AI platforms including Cloudflare AI Playground, Claude Desktop, and GitHub Copilot in VS Code.
 
-### Deploy
+## Deploy
 
 Follow these steps to set up and deploy the project:
 
@@ -25,7 +29,7 @@ npm ci
 npx wrangler deploy
 ```
 
-### Use with Cloudflare AI Playground
+## Use with Cloudflare AI Playground
 
 ![alt text](https://github.com/cloudflare/playwright-mcp/raw/main/docs/imgs/playground-ai-screenshot.png)
 
@@ -65,7 +69,7 @@ Example of a conversation:
 | **User** | Take a final screenshot |
 | **Assistant** | *runs browser_take_screenshot tool*<br> ![alt text](https://github.com/cloudflare/playwright-mcp/raw/main/docs/imgs/todomvc-screenshot-3.png) A final screenshot of the current page has been taken. The screenshot is in PNG format and is 50KB in size. |
 
-### Use with Claude Desktop
+## Use with Claude Desktop
 
 As of now, [Claude Desktop](https://claude.ai/download) only supports local MCP servers. To use `playground-mcp` with Claude Desktop we make use of [mcp-remote](https://github.com/geelen/mcp-remote), a tool that proxies remote MCP servers and exposes them locally. Use the following configuration:
 
@@ -94,7 +98,7 @@ Here's an example of a session opening the TODO demo app, adding "buy lemons" an
 
 ![alt text](https://github.com/cloudflare/playwright-mcp/raw/main/docs/imgs/claudemcp.gif)
 
-### Configure in VSCode
+## Configure in VSCode
 
 You can install the Playwright MCP server using the [VS Code CLI](https://code.visualstudio.com/docs/configure/command-line):
 

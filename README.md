@@ -19,11 +19,12 @@ The server can be used with various AI platforms including Cloudflare AI Playgro
 Follow these steps to set up and deploy the project:
 
 1. Install dependencies:
+
 ```bash
 npm ci
 ```
 
-2. Deploy to Cloudflare Workers:
+1. Deploy to Cloudflare Workers:
 
 ```bash
 npx wrangler deploy
@@ -35,7 +36,7 @@ npx wrangler deploy
 
 [Cloudflare playground AI](https://playground.ai.cloudflare.com/) is a great way to test MCP servers using LLM models available in Workers AI.
 
-- Navigate to https://playground.ai.cloudflare.com/
+- Navigate to <https://playground.ai.cloudflare.com/>
 - Ensure model is set to `llama-3.3-70b-instruct-fp8-fast`
 - In **MCP Servers**, set **URL** to `https://[my-mcp-url].workers.dev/sse`
 - Click **Connect**
@@ -51,7 +52,7 @@ Example of a conversation:
 | Role | Message |
 |------|---------|
 | **User** | Go to demo.playwright.dev/todomvc |
-| **Assistant** | *runs browser_navigate tool*<br> The page has been navigated to https://demo.playwright.dev/todomvc/. The page title is "React • TodoMVC". The page snapshot shows the content of the page, including a heading, a textbox, and several links. |
+| **Assistant** | *runs browser_navigate tool*<br> The page has been navigated to <https://demo.playwright.dev/todomvc/>. The page title is "React • TodoMVC". The page snapshot shows the content of the page, including a heading, a textbox, and several links. |
 | **User** | Create some todo entry |
 | **Assistant** |  *runs browser_type tool*<br> A new todo entry "Buy groceries" has been created. The page snapshot shows the updated content of the page, including the new todo entry. |
 | **User** | Nice. Now create a todo in parrot style |
@@ -90,7 +91,7 @@ As of now, [Claude Desktop](https://claude.ai/download) only supports local MCP 
 }
 ```
 
-3. Save the configuration file and **restart** Claude Desktop to apply the changes.
+1. Save the configuration file and **restart** Claude Desktop to apply the changes.
 
 This setup ensures that Claude Desktop can communicate with the Cloudflare Playwright MCP server.
 

@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
+    "node-addon-api": "*",
+    "node-gyp": "*",
     "typescript": "^5.9.3",
     "wrangler": "^4.76.0"
   }
